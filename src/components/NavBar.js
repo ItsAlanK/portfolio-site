@@ -4,7 +4,7 @@ import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-
 
 export const NavBar = () => {
     return (
-        <Navbar bg="light" variant="light">
+        <Navbar>
           <Container>
             <Navbar.Brand href="#home">ITSALANK</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -17,9 +17,9 @@ export const NavBar = () => {
             </Nav>
             <span className='navbar-text'>
                 <div className='social-icon'>
-                    <a href='#'><FontAwesomeIcon icon={ faGithub }/></a>
-                    <a href='#'><FontAwesomeIcon icon={ faInstagram }/></a>
-                    <a href='#'><FontAwesomeIcon icon={ faLinkedin }/></a>
+                    <a class='nav-social' href='#'><FontAwesomeIcon icon={ faGithub }/></a>
+                    <a class='nav-social' href='#'><FontAwesomeIcon icon={ faInstagram }/></a>
+                    <a class='nav-social' href='#'><FontAwesomeIcon icon={ faLinkedin }/></a>
                 </div>
             </span>
           </Container>

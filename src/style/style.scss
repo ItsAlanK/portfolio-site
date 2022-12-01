@@ -1,3 +1,4 @@
+// Import fonts
 @font-face {
     font-family: 'Raleway';
     src: url('https://fonts.googleapis.com/css?family=Raleway');
@@ -34,10 +35,22 @@ $display-font: 'Neutraface', sans-serif;
 
 
 // Base Style rules
-html { font-size: 16px; } 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+    font-size: 16px;
+} 
 
 body {
     font-family: $body-font;
-    background-color: $bg-color;
+    background-color: $bg-color !important;
     font-size: 1.4rem;
+    overflow-x: hidden;
+    position: relative;
 }

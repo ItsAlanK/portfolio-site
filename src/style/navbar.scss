@@ -1,26 +1,43 @@
 @use 'style';
 
-nav{
+.navbar {
     background-color: style.$bg-color;
+    padding: 1.125rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition: 0.32 ease-in-out;
 }
 
 .navbar-brand {
     font-family: style.$body-font;
     font-weight: 900;
-    font-size: 1.5rem !important;
+    font-size: 1.6rem !important;
+    letter-spacing: 0.3rem;
     color: style.$dark-purple !important;
     -webkit-text-stroke: 1px style.$dark-purple;
 }
 
 .nav-link,
-.navbar-text {
+.nav-social {
     font-family: style.$body-font;
     font-weight: 900 !important;
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.15rem;
     color: style.$dark-purple !important;
     -webkit-text-stroke: 0.5px style.$dark-purple;
+    padding: 0 25px;
+    opacity: 0.75;
 }
 
-.navbar-text {
+.nav-link:hover,
+.nav-link:active,
+.nav-social:hover,
+.nav-social:active {
+    opacity: 1;
+}
+
+.nav-social {
     font-size: 1.25rem !important;
 }
