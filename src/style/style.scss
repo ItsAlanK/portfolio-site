@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.googleapis.com/css?family=Raleway');
+}
+
+@font-face {
+    font-family: 'Neutraface';
+    src: url('./fonts/neutraface-demi.otf') format('otf');
+}
+
+
+// Colors
+$bg-color: #F7F5F3;
+$dark-purple: #251627;
+$teal: #36817E;
+$orange: #FF8D5C;
+$teal-80-opacity: rgba(54, 129, 126, 0.8);
+$orange-60-opacity: rgba(255, 141, 92, 0.6);
+
+
+// Fonts
+$body-font: 'Raleway', sans-serif;
+$display-font: 'Neutraface', sans-serif;
+
+
+// Mixins
+@mixin title($font-size: 1.6rem) {
+    font-family: $body-font;
+    font-weight: 900;
+    font-size: $font-size !important;
+    color: $dark-purple !important;
+    text-shadow: 1px 1px $teal-80-opacity, -1px 1px $orange-60-opacity;
+}
+
+
+// Base Style rules
+html { font-size: 16px; } 
+
+body {
+    font-family: $body-font;
+    background-color: $bg-color;
+    font-size: 1.4rem;
+}

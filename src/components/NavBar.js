@@ -6,7 +6,7 @@ export const NavBar = () => {
     return (
         <Navbar bg="light" variant="light">
           <Container>
-            <Navbar.Brand href="#home">ItsAlanK</Navbar.Brand>
+            <Navbar.Brand href="#home">ITSALANK</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span className='navbar-toggler-icon'></span>
             </Navbar.Toggle>

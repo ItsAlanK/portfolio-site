@@ -1,0 +1,26 @@
+@use 'style';
+
+nav{
+    background-color: style.$bg-color;
+}
+
+.navbar-brand {
+    font-family: style.$body-font;
+    font-weight: 900;
+    font-size: 1.5rem !important;
+    color: style.$dark-purple !important;
+    -webkit-text-stroke: 1px style.$dark-purple;
+}
+
+.nav-link,
+.navbar-text {
+    font-family: style.$body-font;
+    font-weight: 900 !important;
+    font-size: 1rem !important;
+    color: style.$dark-purple !important;
+    -webkit-text-stroke: 0.5px style.$dark-purple;
+}
+
+.navbar-text {
+    font-size: 1.25rem !important;
+}
