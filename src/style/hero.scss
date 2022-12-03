@@ -13,7 +13,7 @@
 .hero h1 {
     font-family: style.$display-font;
     font-size: 4rem;
-    letter-spacing: 0.8px;
+    letter-spacing: 10px;
     line-height: 1;
     margin-bottom: 1rem;
     display: block;
@@ -27,7 +27,7 @@
     font-family: style.$display-font;
     color: style.$dark-purple;
     font-size: 1.5rem;
-    letter-spacing: 0.8px;
+    letter-spacing: 4px;
     line-height: 1.5em;
     width: 96%;
 }
@@ -69,6 +69,7 @@
 
 .hero .flex {
     justify-content: center;
+    margin-top: 2rem;
 }
 
 @keyframes updown {
@@ -87,8 +88,14 @@
     border-right: 0.08em solid #666;
 }
 
-@media (max-width: 1000px) {
+// Query set to that size to allow for overflow on typing affect. Lazy solution.
+@media (max-width: 1250px) {
     .hero .tagline {
       height: auto;
+    }
+
+    .hero img {
+        max-width: 100%;
+        border: 0.6rem solid style.$teal;
     }
   }
