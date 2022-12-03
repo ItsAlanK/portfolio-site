@@ -1,0 +1,63 @@
+@use 'style';
+
+.hero {
+    margin-top: 0;
+    padding: 2rem 0 100px 0;
+  }
+  .hero .title {
+    @include style.title($font-size: 3rem);
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+  .hero h1 {
+    font-family: style.$display-font;
+    font-size: 4rem;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .hero p {
+    font-family: style.$display-font;
+    color: style.$dark-purple;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+  }
+  .hero button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+  }
+  .hero button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+  }
+  .hero button:hover svg {
+    margin-left: 25px;
+  }
+  .hero img {
+    max-width: 100%;
+    animation: updown 3s linear infinite;
+  }
+  @keyframes updown {
+      0% {
+          transform: translateY(-20px);
+      }
+      50% {
+          transform: translateY(20px);
+      }
+      100% {
+          transform: translateY(-20px);
+      }
+  }
+  .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+  }

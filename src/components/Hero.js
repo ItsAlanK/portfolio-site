@@ -8,7 +8,7 @@ export const Hero = () => {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ 'Full Stack Software Developer', 'Web Designer', 'Illustrator', 'Thinks he\'s a funny guy' ];
+    const toRotate = [ 'Full Stack Software Dev', 'Web Designer', 'Illustrator', 'Thinks he\'s a funny guy' ];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100); 
     const period = 2000;
@@ -46,15 +46,15 @@ export const Hero = () => {
         <section class='hero' id='home'>
             <Container>
                 <Row className='align-items-center'>
-                    <Col xs={12} md={6} xl={7}>
-                        <span className="title">Alan Kinsella</span>
-                        <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Software Developer", "Web Designer", "Illustrator", "Thinks he&#39;s a funny guy" ]'><span className="wrap">{ text }</span></span></h1>
+                    <Col xs={12} md={6}>
+                        <span className="title">ALAN KINSELLA</span>
+                        <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Software Dev", "Web Designer", "Illustrator", "Thinks he&#39;s a funny guy" ]'><span className="wrap">{ text }</span></span></h1>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            Obsessed with learning and expanding my skillset. Passionate about clean, sleek design inside and out.
                         </p>
                         <button onClick={() => console.log('chat')}>Let's Chat <FontAwesomeIcon icon={ faPaperPlane }/>&nbsp;</button>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    <Col xs={12} md={6}>
                         <img src={ portraitImg } alt="Alan Kinsella, ItsAlanK, portrait." />
                     </Col>
                 </Row>

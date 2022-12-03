@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Neutraface';
-    src: url('../assets/fonts/neutraface-demi.otf') format('otf');
+    src: url('../assets/fonts/neutraface-demi.otf') format('opentype');
 }
 
 @font-face {
@@ -36,8 +36,9 @@ $display-font: 'Neutraface', sans-serif;
     font-family: $body-font;
     font-weight: 900;
     font-size: $font-size !important;
+    -webkit-text-stroke: 1.5px $dark-purple;
     color: $dark-purple !important;
-    text-shadow: 1px 1px $teal-80-opacity, -1px 1px $orange-60-opacity;
+    text-shadow: 3px 3px $teal-80-opacity, -3px 4px $orange-60-opacity;
 }
 
 
