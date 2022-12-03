@@ -1,8 +1,7 @@
 @use 'style';
 
 .hero {
-    margin-top: 0;
-    padding: 2rem 0 100px 0;
+    margin-top: 1rem;
   }
 
 .hero .title {
@@ -61,19 +60,26 @@
 }
 
 .hero img {
-    max-width: 100%;
-    animation: updown 3s linear infinite;
+    max-width: 80%;
+    border-radius: 100%;
+    background-color: style.$bg-color;
+    border: 0.75rem solid style.$teal;
+    animation: 3s ease-in-out infinite updown;
+}
+
+.hero .flex {
+    justify-content: center;
 }
 
 @keyframes updown {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-5px);
     }
     50% {
-        transform: translateY(20px);
+        transform: translateY(5px);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-5px);
     }
 }
 

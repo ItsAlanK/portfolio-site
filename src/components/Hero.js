@@ -56,7 +56,7 @@ export const Hero = () => {
                         </p>
                         <button onClick={() => console.log('chat')}>Let's Chat <FontAwesomeIcon icon={ faPaperPlane }/>&nbsp;</button>
                     </Col>
-                    <Col xs={12} md={6}>
+                    <Col className='flex' xs={12} md={6}>
                         <img src={ portraitImg } alt="Alan Kinsella, ItsAlanK, portrait." />
                     </Col>
                 </Row>
