@@ -4,60 +4,85 @@
     margin-top: 0;
     padding: 2rem 0 100px 0;
   }
-  .hero .title {
+
+.hero .title {
     @include style.title($font-size: 3rem);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     display: inline-block;
-  }
-  .hero h1 {
+}
+
+.hero h1 {
     font-family: style.$display-font;
     font-size: 4rem;
     letter-spacing: 0.8px;
     line-height: 1;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     display: block;
-  }
-  .hero p {
+}
+
+.hero .tagline {
+    height: 8.5rem;
+}
+
+.hero p {
     font-family: style.$display-font;
     color: style.$dark-purple;
-    font-size: 18px;
+    font-size: 1.5rem;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     width: 96%;
-  }
-  .hero button {
-    color: #fff;
+}
+
+.hero button {
+    color: style.$bg-color;
+    background-color: style.$dark-purple;
     font-weight: 700;
-    font-size: 20px;
-    margin-top: 60px;
+    font-size: 2rem;
+    box-shadow: 10px 10px linear-gradient(90.21deg, rgba(54,129,126,1) 0%, rgba(255,141,92,0.8) 150%);
+    margin-top: 2.5rem;
+    padding: 0 0.75rem;
     letter-spacing: 0.8px;
     display: flex;
     align-items: center;
-  }
-  .hero button svg {
-    font-size: 25px;
+    border: none;
+    border-radius: 1rem;
+}
+
+.hero button svg {
+    font-size: 2rem;
     margin-left: 10px;
     transition: 0.3s ease-in-out;
     line-height: 1;
-  }
-  .hero button:hover svg {
-    margin-left: 25px;
-  }
-  .hero img {
+}
+
+.hero button:hover svg {
+    transform: translateX(5px) translateY(-5px) rotate(22deg) scale(60%);
+    margin-left: 2rem;
+}
+
+.hero img {
     max-width: 100%;
     animation: updown 3s linear infinite;
-  }
-  @keyframes updown {
-      0% {
-          transform: translateY(-20px);
-      }
-      50% {
-          transform: translateY(20px);
-      }
-      100% {
-          transform: translateY(-20px);
-      }
-  }
-  .txt-rotate > .wrap {
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.txt-rotate > .wrap {
     border-right: 0.08em solid #666;
+}
+
+@media (max-width: 1000px) {
+    .hero .tagline {
+      height: auto;
+    }
   }

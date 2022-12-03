@@ -8,7 +8,7 @@ export const Hero = () => {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ 'Full Stack Software Dev', 'Web Designer', 'Illustrator', 'Thinks he\'s a funny guy' ];
+    const toRotate = [ 'Full Stack Software Dev', 'Web Designer', 'Illustrator', 'Thinks he\'s a real funny guy' ];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100); 
     const period = 2000;
@@ -48,9 +48,11 @@ export const Hero = () => {
                 <Row className='align-items-center'>
                     <Col xs={12} md={6}>
                         <span className="title">ALAN KINSELLA</span>
-                        <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Software Dev", "Web Designer", "Illustrator", "Thinks he&#39;s a funny guy" ]'><span className="wrap">{ text }</span></span></h1>
+                        <div className='tagline'>
+                            <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Software Dev", "Web Designer", "Illustrator", "Thinks he&#39;s a real funny guy" ]'><span className="wrap">{ text }</span></span></h1>
+                        </div>
                         <p>
-                            Obsessed with learning and expanding my skillset. Passionate about clean, sleek design inside and out.
+                            Obsessed with learning and expanding my skillset. Passionate about clean, sleek design inside and out. Looking for new ways to grow my creativity.
                         </p>
                         <button onClick={() => console.log('chat')}>Let's Chat <FontAwesomeIcon icon={ faPaperPlane }/>&nbsp;</button>
                     </Col>
