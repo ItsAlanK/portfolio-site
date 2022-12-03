@@ -34,15 +34,35 @@
     -webkit-text-stroke: 0.5px style.$dark-purple;
 }
 
+.nav-link {
+    position: relative;
+    padding: 0 1rem !important;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    bottom: -2px;
+    left: 10%;
+    background-color: style.$teal;
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-out;
+    transform: scaleX(0);
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
 .nav-link:hover,
 .nav-link.active,
 .nav-social:hover {
     color: style.$teal !important;
     -webkit-text-stroke: 0.5px style.$teal;
-}
-
-.nav-link {
-    padding: 0 1rem !important;
 }
 
 
