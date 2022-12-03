@@ -19,7 +19,8 @@
     -webkit-text-stroke: 1px style.$dark-purple;
 }
 
-.navbar-brand:hover {
+.navbar-brand:hover
+.navbar-brand.active {
     color: style.$teal !important;
     -webkit-text-stroke: 1px style.$teal;
 }
@@ -35,9 +36,8 @@
 }
 
 .nav-link:hover,
-.nav-link:active,
-.nav-social:hover,
-.nav-social:active {
+.nav-link.active,
+.nav-social:hover {
     color: style.$teal !important;
     -webkit-text-stroke: 0.5px style.$teal;
 }
