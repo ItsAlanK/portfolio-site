@@ -17,13 +17,24 @@
     font-size: 2rem !important;
     letter-spacing: 0.2rem;
     color: style.$dark-purple !important;
+    transition: 0.2s linear;
 }
 
-.navbar-brand:hover,
-.navbar-brand.active {
+.navbar-brand:hover {
     color: style.$teal !important;
-    -webkit-text-stroke: 0.5px style.$teal;
-    text-shadow: 2px 2px 0 style.$orange;
+}
+
+.navbar-brand::after {
+    content: 'ItsAlanK';
+    display: block;
+    color: style.$teal;
+    transform: rotate3d(1, 0, 0, 180deg);
+    margin: -26px 0 0 0;
+    transition: 0.2s linear;
+}
+
+.navbar-brand:hover::after {
+    color: style.$dark-purple;
 }
 
 
