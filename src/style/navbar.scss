@@ -10,6 +10,8 @@
     transition: 0.32s ease-in-out;
 }
 
+
+// Main logo
 .navbar-brand {
     font-family: style.$logo-font;
     font-size: 2rem !important;
@@ -24,6 +26,8 @@
     text-shadow: 2px 2px 0 style.$orange;
 }
 
+
+// Links
 .nav-link,
 .nav-social {
     font-family: style.$body-font;
@@ -40,6 +44,7 @@
     text-decoration: none;
 }
 
+// Underline effect
 .nav-link::after {
     content: '';
     position: absolute;
@@ -141,4 +146,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
     transform: translateY(-7px);
+}
+
+// Mobile menu
+.navbar-collapse .nav-link {
+    margin: 5px 0;
+}
+
+.navbar-collapse .navbar-text {
+    justify-content: center;
+}
+
+.navbar-collapse .social-icon {
+    margin: 0;
+    flex-grow: 4;
+    justify-content: space-between;
+}
+
+.navbar-collapse .nav-social {
+    margin: 20px auto;
 }
