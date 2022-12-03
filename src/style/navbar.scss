@@ -7,7 +7,7 @@
     width: 100%;
     top: 0;
     z-index: 9999;
-    transition: 0.32 ease-in-out;
+    transition: 0.32s ease-in-out;
 }
 
 .navbar-brand {
@@ -19,7 +19,7 @@
     -webkit-text-stroke: 1px style.$dark-purple;
 }
 
-.navbar-brand:hover
+.navbar-brand:hover,
 .navbar-brand.active {
     color: style.$teal !important;
     -webkit-text-stroke: 1px style.$teal;
@@ -71,4 +71,54 @@
     transform: scale(1.3);
     transition: all 0.2s ease-in-out;
     color: style.$teal !important;
+}
+
+// Toggler
+.navbar-toggler {
+    border: 0 !important;
+}
+
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+	outline: none;
+    box-shadow: none;
+}
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 3px solid style.$dark-purple;
+  transition: all 300ms linear;
+  top: -1px;
+}
+
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+	width: 24px;
+	position: absolute;
+	height: 3px;
+	background-color: style.$dark-purple;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+}
+nav.navbar .navbar-toggler-icon:after {
+	top: 7px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+	background-color: style.$dark-purple;
+	height: 3px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(7px) rotate(-45deg);
+	background-color: style.$dark-purple;
+	height: 3px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
 }
