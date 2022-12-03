@@ -110,15 +110,16 @@ nav.navbar .navbar-toggler-icon:after {
 }
 
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-	transform: rotate(45deg);
+	transform: translateY(7px) rotate(45deg);
 	background-color: style.$dark-purple;
 	height: 3px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-	transform: translateY(7px) rotate(-45deg);
+	transform: translateY(14px) rotate(-45deg);
 	background-color: style.$dark-purple;
 	height: 3px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
+    transform: translateY(-7px);
 }
