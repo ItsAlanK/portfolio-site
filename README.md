@@ -19,10 +19,12 @@ Starting palette coming from current CV, want to have more pastel final look so 
 - Almost black purple could maybe be pushed closer to black
 
 Final Palette
+![Coolors Color Palette](./docs/palette-final.png)
+[Palette Link](https://coolors.co/f7f3f3-ff8d5c-429e9b-cfc9ca-251627)
 
 ---
 
-## Feature List
+## Feature List (Planned)
 
 Homepage
 - Main Bio w/ Portrait
@@ -44,3 +46,16 @@ Header/Footer
 Stretch Feats
 - Inverted Mode
 
+
+## Technologies, Tools and Assets
+
+### Langs and Libs
+- [HTML/CSS/JS](https://letmegooglethat.com/?q=What+is+html)
+- [React](https://reactjs.org/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [SASS](https://sass-lang.com/)
+### Fonts
+
+- Display Font: [Mendl Sans Dusk](https://fonts.adobe.com/fonts/mendl-sans)
+- Body Font: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Icons: [Font Awesome](https://fontawesome.com/v5/docs/web/use-with/react)
