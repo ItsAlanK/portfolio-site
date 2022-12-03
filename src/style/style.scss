@@ -9,6 +9,12 @@
     src: url('../assets/fonts/neutraface-demi.otf') format('otf');
 }
 
+@font-face {
+    font-family:"mendl-sans-dusk";
+    src:url("https://use.typekit.net/af/c13649/00000000000000007735e275/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/c13649/00000000000000007735e275/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/c13649/00000000000000007735e275/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;
+    }
+
 
 // Colors
 $bg-color: #F7F5F3;
@@ -20,6 +26,7 @@ $orange-60-opacity: rgba(255, 141, 92, 0.6);
 
 
 // Fonts
+$logo-font: 'mendl-sans-dusk', sans-serif;
 $body-font: 'Raleway', sans-serif;
 $display-font: 'Neutraface', sans-serif;
 

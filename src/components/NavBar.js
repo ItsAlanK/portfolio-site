@@ -24,7 +24,7 @@ export const NavBar = () => {
   return (
       <Navbar expand='md'>
         <Container>
-          <Navbar.Brand href="#home">ITSALANK</Navbar.Brand>
+          <Navbar.Brand href="#home">ItsAlanK</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" aria-expanded={ selectAria } onClick={() => handleChangeSelect()}>
               <span className='navbar-toggler-icon'></span>
           </Navbar.Toggle>

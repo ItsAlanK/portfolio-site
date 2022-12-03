@@ -11,18 +11,16 @@
 }
 
 .navbar-brand {
-    font-family: style.$body-font;
-    font-weight: 900;
-    font-size: 1.4rem !important;
+    font-family: style.$logo-font;
+    font-size: 1.8rem !important;
     letter-spacing: 0.2rem;
     color: style.$dark-purple !important;
-    -webkit-text-stroke: 1px style.$dark-purple;
 }
 
 .navbar-brand:hover,
 .navbar-brand.active {
     color: style.$teal !important;
-    -webkit-text-stroke: 1px style.$teal;
+    -webkit-text-stroke: 0.5px style.$teal;
 }
 
 .nav-link,
