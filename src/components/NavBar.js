@@ -22,7 +22,7 @@ export const NavBar = () => {
   }
 
   return (
-      <Navbar expand='md'>
+      <Navbar expand='md' className="fixed-top">
         <Container>
           <Navbar.Brand href="#home">ItsAlanK</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" aria-expanded={ selectAria } onClick={() => handleChangeSelect()}>

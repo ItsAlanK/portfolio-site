@@ -2,3 +2,4 @@
 import './style.scss';
 import './navbar.scss';
 import './hero.scss';
+import './about.scss';

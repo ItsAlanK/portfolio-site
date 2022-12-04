@@ -1,0 +1,24 @@
+@use 'style';
+
+.about {
+    margin: 5rem 0;
+    padding: 3rem 0;
+    background-color: style.$teal;
+    transform: skewY(-1deg);
+}
+
+.flex {
+    justify-content: center;
+    transform: skewY(1deg);
+}
+
+.title {
+    @include style.title($font-size: 3rem);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
