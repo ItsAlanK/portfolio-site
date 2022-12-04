@@ -5,89 +5,92 @@
     margin-bottom: 4rem;
   }
 
-.hero .title {
-    @include style.title($font-size: 3rem);
-    margin-bottom: 1.5rem;
-    display: inline-block;
+.hero {
+    .title {
+        @include style.title($font-size: 3rem);
+        margin-bottom: 1.5rem;
+        display: inline-block;
+    }
+
+    h1 {
+        font-family: style.$display-font;
+        font-size: 3rem;
+        letter-spacing: 10px;
+        line-height: 1;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .tagline {
+        height: 6.5rem;
+    }
+
+    p {
+        font-family: style.$display-font;
+        color: style.$dark-purple;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        line-height: 1.5em;
+        width: 96%;
+    }
+
+    button {
+        color: style.$bg-color;
+        background-color: style.$dark-purple;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 2.5rem;
+        padding: 0 0.75rem;
+        letter-spacing: 0.8px;
+        display: flex;
+        align-items: center;
+        border: none;
+        border-radius: 1rem;
+        transition: 0.3s ease-in-out;
+    }
+
+    button:hover {
+        box-shadow: 2px 2px 3px style.$orange;
+        transition: 0.3s ease-in-out;
+    }
+
+    button svg {
+        font-size: 2rem;
+        margin-left: 10px;
+        transition: 0.3s ease-in-out;
+        line-height: 1;
+    }
+
+    button:hover svg {
+        transform: translateX(5px) translateY(-5px) rotate(22deg) scale(60%);
+        margin-left: 2rem;
+    }
+
+    img {
+        max-width: 80%;
+        border-radius: 100%;
+        background-color: style.$bg-color;
+        border: 0.75rem solid style.$teal;
+        //animation: 3s ease-in-out infinite updown;
+    }
+
+    .flex {
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .flex::after {
+        content: "";
+        background-color: style.$teal;
+        position: absolute;
+        width: .6rem;
+        height: 35vw;
+        z-index: -1;
+        animation: 6s ease-in-out infinite rotate;
+    }
 }
 
-.hero h1 {
-    font-family: style.$display-font;
-    font-size: 3rem;
-    letter-spacing: 10px;
-    line-height: 1;
-    margin-bottom: 1rem;
-    display: block;
-}
-
-.hero .tagline {
-    height: 6.5rem;
-}
-
-.hero p {
-    font-family: style.$display-font;
-    color: style.$dark-purple;
-    font-size: 1.5rem;
-    letter-spacing: 4px;
-    line-height: 1.5em;
-    width: 96%;
-}
-
-.hero button {
-    color: style.$bg-color;
-    background-color: style.$dark-purple;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-top: 2.5rem;
-    padding: 0 0.75rem;
-    letter-spacing: 0.8px;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 1rem;
-    transition: 0.3s ease-in-out;
-}
-
-.hero button:hover {
-    box-shadow: 2px 2px 3px style.$orange;
-    transition: 0.3s ease-in-out;
-}
-
-.hero button svg {
-    font-size: 2rem;
-    margin-left: 10px;
-    transition: 0.3s ease-in-out;
-    line-height: 1;
-}
-
-.hero button:hover svg {
-    transform: translateX(5px) translateY(-5px) rotate(22deg) scale(60%);
-    margin-left: 2rem;
-}
-
-.hero img {
-    max-width: 80%;
-    border-radius: 100%;
-    background-color: style.$bg-color;
-    border: 0.75rem solid style.$teal;
-    //animation: 3s ease-in-out infinite updown;
-}
-
-.hero .flex {
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.hero .flex::after {
-    content: "";
-    background-color: style.$teal;
-    position: absolute;
-    width: .6rem;
-    height: 35vw;
-    z-index: -1;
-    animation: 6s ease-in-out infinite rotate;
-}
 /*
 Up/down action for image, floating effect
 @keyframes updown {
@@ -127,19 +130,21 @@ Up/down action for image, floating effect
 
 // Query set to that size to allow for overflow on typing affect. Lazy solution.
 @media (max-width: 991px) {
-    .hero .tagline {
-      height: auto;
-    }
+    .hero {
+        .tagline {
+            height: auto;
+        }
+        
+        img {
+            max-width: 100%;
+            border: 0.6rem solid style.$teal;
+        }
 
-    .hero img {
-        max-width: 100%;
-        border: 0.6rem solid style.$teal;
+        .flex::after {
+            display: none;
+        }
     }
-
-    .hero .flex::after {
-        display: none;
-    }
-  }
+}
 
 @media (min-width: 1520px) {
     .hero .flex::after {
