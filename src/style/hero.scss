@@ -12,7 +12,7 @@
 
 .hero h1 {
     font-family: style.$display-font;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 10px;
     line-height: 1;
     margin-bottom: 1rem;
@@ -20,7 +20,7 @@
 }
 
 .hero .tagline {
-    height: 8.5rem;
+    height: 6.5rem;
 }
 
 .hero p {
@@ -37,7 +37,6 @@
     background-color: style.$dark-purple;
     font-weight: 700;
     font-size: 2rem;
-    box-shadow: 10px 10px linear-gradient(90.21deg, rgba(54,129,126,1) 0%, rgba(255,141,92,0.8) 150%);
     margin-top: 2.5rem;
     padding: 0 0.75rem;
     letter-spacing: 0.8px;
@@ -45,6 +44,12 @@
     align-items: center;
     border: none;
     border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.hero button:hover {
+    box-shadow: 2px 2px 3px style.$orange;
+    transition: 0.3s ease-in-out;
 }
 
 .hero button svg {
@@ -60,7 +65,7 @@
 }
 
 .hero img {
-    max-width: 80%;
+    max-width: 60%;
     border-radius: 100%;
     background-color: style.$bg-color;
     border: 0.75rem solid style.$teal;
@@ -89,7 +94,7 @@
 }
 
 // Query set to that size to allow for overflow on typing affect. Lazy solution.
-@media (max-width: 1250px) {
+@media (max-width: 991px) {
     .hero .tagline {
       height: auto;
     }
