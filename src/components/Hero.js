@@ -8,7 +8,11 @@ export const Hero = () => {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ 'Full Stack Software Dev', 'Web Designer', 'Illustrator', 'Sound/Video Editor', 'Musician', 'Thinks he\'s a real funny guy' ];
+    const toRotate = [ 
+        'Full Stack Software Dev', 'Web Designer', 'Illustrator',
+        'Sound/Video Editor', 'Photographer', 'Gamer', 'Musician',
+        'Thinks he\'s a real funny guy'
+    ];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100); 
     const period = 2000;
@@ -49,7 +53,11 @@ export const Hero = () => {
                     <Col xs={12} md={6} lg={7}>
                         <span className="title">ALAN KINSELLA</span>
                         <div className='tagline'>
-                            <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Software Dev", "Web Designer", "Illustrator", "Sound/Video Editor", "Musician", "Thinks he&#39;s a real funny guy" ]'><span className="wrap">{ text }</span></span></h1>
+                            <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[
+                                    "Full Stack Software Dev", "Web Designer", "Illustrator",
+                                    "Sound/Video Editor", "Photographer", "Gamer", "Musician",
+                                    "Thinks he&#39;s a real funny guy"
+                                ]'><span className="wrap">{ text }</span></span></h1>
                         </div>
                         <p>
                             Obsessed with learning and expanding my skillset. Passionate about clean, sleek design inside and out. Looking for new ways to grow my creativity.
