@@ -46,7 +46,7 @@ export const Hero = () => {
         <section class='hero' id='home'>
             <Container>
                 <Row className='align-items-center'>
-                    <Col xs={12} md={6}>
+                    <Col xs={12} md={6} lg={7}>
                         <span className="title">ALAN KINSELLA</span>
                         <div className='tagline'>
                             <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Software Dev", "Web Designer", "Illustrator", "Sound/Video Editor", "Musician", "Thinks he&#39;s a real funny guy" ]'><span className="wrap">{ text }</span></span></h1>
@@ -56,7 +56,7 @@ export const Hero = () => {
                         </p>
                         <button onClick={() => console.log('chat')}>Let's Chat <FontAwesomeIcon icon={ faPaperPlane }/>&nbsp;</button>
                     </Col>
-                    <Col className='flex' xs={12} md={6}>
+                    <Col className='flex' xs={12} md={6} lg={5}>
                         <img src={ portraitImg } alt="Alan Kinsella, ItsAlanK, portrait." />
                     </Col>
                 </Row>

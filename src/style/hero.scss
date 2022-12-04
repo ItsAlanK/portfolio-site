@@ -65,7 +65,7 @@
 }
 
 .hero img {
-    max-width: 60%;
+    max-width: 80%;
     border-radius: 100%;
     background-color: style.$bg-color;
     border: 0.75rem solid style.$teal;
@@ -83,7 +83,7 @@
     background-color: style.$teal;
     position: absolute;
     width: .6rem;
-    height: 30vw;
+    height: 35vw;
     z-index: -1;
     animation: 6s ease-in-out infinite rotate;
 }
@@ -139,3 +139,9 @@ Up/down action for image, floating effect
         display: none;
     }
   }
+
+@media (min-width: 1520px) {
+    .hero .flex::after {
+        height: 30vw;
+    }
+}
