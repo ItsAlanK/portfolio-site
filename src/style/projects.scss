@@ -1,76 +1,67 @@
 @use 'style';
 
-.nav-pills {
-    justify-content: center;
-}
-
 .projects {
     padding: 80px 0;
     position: relative;
     background-color: style.$bg-color;
 }
 
-.projects h2 {
-    font-size: 45px;
-    font-weight: 700;
-    text-align: center;
-}
+.projects {
+    h2 {
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+    };
 
-.projects p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px auto 30px auto;
-    text-align: center;
-    width: 56%;
-}
+    .nav.nav-pills {
+        width: 72%;
+        margin: 0 auto 5rem auto;
+        border-radius: 50px;
+        background-color: rgb(255 255 255 / 10%);
+        overflow: hidden;
+        justify-content: center;
+    }
 
-.projects .nav.nav-pills {
-    width: 72%;
-    margin: 0 auto 5rem auto;
-    border-radius: 50px;
-    background-color: rgb(255 255 255 / 10%);
-    overflow: hidden;
-}
+    .nav.nav-pills {
+        .nav-item {
+            width: 33.33333%;
+        }
 
-.projects .nav.nav-pills .nav-item {
-    width: 33.33333%;
-}
+        .nav-link {
+            background-color: transparent;
+            color: style.$dark-purple !important;
+            border-radius: 0;
+            padding: 17px 0;
+            width: 100%;
+            font-size: 1rem;
+            letter-spacing: 0.8px;
+            font-weight: 500;
+            position: relative;
+            transition: 0.3s ease-in-out;
+            text-align: center;
+            z-index: 0;
+        }
 
-.projects .nav.nav-pills .nav-link {
-    background-color: transparent;
-    color: style.$dark-purple !important;
-    border-radius: 0;
-    padding: 17px 0;
-    width: 100%;
-    font-size: 1rem;
-    letter-spacing: 0.8px;
-    font-weight: 500;
-    position: relative;
-    transition: 0.3s ease-in-out;
-    text-align: center;
-    z-index: 0;
-}
+        .nav-link::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            background: style.$dark-purple;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: 0.3s ease-in-out;
+        }
 
-.projects .nav.nav-pills .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: style.$dark-purple;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
-}
+        .nav-link.active::before {
+            width: 100% !important;
+        }
 
-.projects .nav.nav-pills .nav-link.active::before {
-    width: 100% !important;
-}
-
-.projects .nav.nav-pills .nav-link.active {
-    color: style.$bg-color !important;
+        .nav-link.active {
+            color: style.$bg-color !important;
+        }
+    }
 }
 
 .project-img-box {
@@ -115,16 +106,18 @@ content: "";
     opacity: 1;
 }
 
-.project-text h4 {
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    line-height: 1.1em;
-}
+.project-text {
+    h4 {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        line-height: 1.1em;
+    }
 
-.project-text span {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 0.8px;
+    span {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 0.8px;
+    }
 }
