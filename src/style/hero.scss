@@ -69,7 +69,7 @@
     border-radius: 100%;
     background-color: style.$bg-color;
     border: 0.75rem solid style.$teal;
-    animation: 3s ease-in-out infinite updown;
+    //animation: 3s ease-in-out infinite updown;
 }
 
 .hero .flex {
@@ -83,11 +83,12 @@
     background-color: style.$teal;
     position: absolute;
     width: .6rem;
-    height: 80%;
+    height: 30vw;
     z-index: -1;
-    animation: 6s ease-in-out infinite updown-lines;
+    animation: 6s ease-in-out infinite rotate;
 }
-
+/*
+Up/down action for image, floating effect
 @keyframes updown {
     0% {
         transform: translateY(-5px);
@@ -99,27 +100,28 @@
         transform: translateY(-5px);
     }
 }
+*/
 
-@keyframes updown-lines {
+@keyframes rotate {
     0% {
-        transform: rotate(90deg) translateY(5px);
+        transform: rotate(90deg);
     }
     25% {
-        transform: rotate(85deg) translateY(-5px);
+        transform: rotate(85deg);
     }
     50% {
-        transform: rotate(180deg) translateY(5px);
+        transform: rotate(180deg);
     }
     75% {
-        transform: rotate(-85deg) translateY(-5px);
+        transform: rotate(-85deg);
     }
     100% {
-        transform: rotate(90deg) translateY(5px);
+        transform: rotate(90deg);
     }
 }
 
 .txt-rotate > .wrap {
-    border-right: 0.08em solid #666;
+    border-right: 0.08em solid style.$orange;
 }
 
 // Query set to that size to allow for overflow on typing affect. Lazy solution.
