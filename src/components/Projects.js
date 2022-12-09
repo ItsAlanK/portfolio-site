@@ -7,22 +7,26 @@ export const Projects = () => {
     const projects = [
         {
             title: "Title 1",
-            description: "Desc 1",
+            category: "Web",
+            description: "Short Proj desc",
             imgUrl: projImg1,
         },
         {
             title: "Title 2",
-            description: "Desc 1",
+            category: "Web",
+            description: "Short Proj desc",
             imgUrl: projImg1,
         },
         {
             title: "Title 3",
-            description: "Desc 1",
+            category: "Creative",
+            description: "Short Proj desc",
             imgUrl: projImg1,
         },
         {
             title: "Title 4",
-            description: "Desc 1",
+            category: "Creative",
+            description: "Short Proj desc",
             imgUrl: projImg1,
         },
     ];
@@ -61,9 +65,11 @@ export const Projects = () => {
                                     <Row>
                                         {
                                             projects.map((project, index) => {
-                                                return (
-                                                    <ProjectCard key={index}{...project} />
-                                                )
+                                                if (project.category === 'Web') {
+                                                    return (
+                                                        <ProjectCard key={index}{...project} />
+                                                    )
+                                                }
                                             })
                                         }
                                     </Row>
@@ -72,9 +78,11 @@ export const Projects = () => {
                                     <Row>
                                         {
                                             projects.map((project, index) => {
-                                                return (
-                                                    <ProjectCard key={index}{...project} />
-                                                )
+                                                if (project.category === 'Creative') {
+                                                    return (
+                                                        <ProjectCard key={index}{...project} />
+                                                    )
+                                                }
                                             })
                                         }
                                     </Row>

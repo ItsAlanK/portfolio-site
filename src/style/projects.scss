@@ -71,17 +71,24 @@
     }
 }
 
+/* Project Cards */
 .project-img-box {
     position: relative;
     border-radius: 30px;
     overflow: hidden;
     margin-bottom: 24px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.project-img-box:hover {
+    box-shadow: 0px 0px 10px 1px style.$teal;
+    transition: 0.3s ease-in-out;
 }
 
 .project-img-box::before {
 content: "";
-    background: linear-gradient(180deg, style.$bg-color 0, transparent 200%);
+    background: linear-gradient(180deg, style.$teal 0, transparent 200%);
     opacity: 0.85;
     position: absolute;
     width: 100%;
@@ -118,14 +125,20 @@ content: "";
     h4 {
         font-size: 30px;
         font-weight: 700;
-        letter-spacing: 0.8px;
+        letter-spacing: 2px;
         line-height: 1.1em;
+        color: style.$bg-color;
     }
 
     span {
         font-style: italic;
         font-weight: 400;
         font-size: 15px;
-        letter-spacing: 0.8px;
+        letter-spacing: 2px;
+        color: style.$bg-color;
+    }
+
+    p {
+        color: style.$bg-color;
     }
 }
