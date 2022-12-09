@@ -1,21 +1,22 @@
 @use 'style';
 
 .about {
-    margin: 5rem 0;
-    padding: 3rem 0;
+    margin: 3rem 0;
+    padding: 5rem 0;
     background-color: style.$teal;
-    transform: skewY(-1deg);
+    transform: skewY(-3deg);
 }
 
-.flex {
-    justify-content: center;
-    transform: skewY(1deg);
-}
+.about {
+    .flex {
+    transform: skewY(3deg);
+    }
 
-.title {
-    @include style.title($font-size: 3rem);
-    margin-bottom: 1.5rem;
-    display: inline-block;
+    .title {
+        @include style.title($font-size: 3rem);
+        margin-bottom: 1.5rem;
+        display: inline-block;
+    }
 }
 
 p {

@@ -1,7 +1,7 @@
 @use 'style';
 
 .projects {
-    padding: 80px 0;
+    padding: 5rem 0;
     position: relative;
     background-color: style.$bg-color;
 }
@@ -13,11 +13,15 @@
         text-align: center;
     };
 
+    .title {
+        @include style.title($font-size: 3rem);
+        padding-bottom: 1rem;
+    }
+
     .nav.nav-pills {
         width: 72%;
         margin: 0 auto 5rem auto;
-        border-radius: 50px;
-        background-color: rgb(255 255 255 / 10%);
+        border-radius: 3.1rem;
         overflow: hidden;
         justify-content: center;
     }
@@ -28,14 +32,16 @@
         }
 
         .nav-link {
+            font-family: style.$body-font;
+            font-weight: 500 !important;
+            font-size: 1.2rem !important;
+            letter-spacing: 0.15rem;
+            -webkit-text-stroke: 0.5px style.$dark-purple;
             background-color: transparent;
             color: style.$dark-purple !important;
             border-radius: 0;
             padding: 17px 0;
             width: 100%;
-            font-size: 1rem;
-            letter-spacing: 0.8px;
-            font-weight: 500;
             position: relative;
             transition: 0.3s ease-in-out;
             text-align: center;
@@ -60,6 +66,7 @@
 
         .nav-link.active {
             color: style.$bg-color !important;
+            -webkit-text-stroke: 0.5px style.$bg-color;
         }
     }
 }
@@ -69,11 +76,12 @@
     border-radius: 30px;
     overflow: hidden;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 
 .project-img-box::before {
 content: "";
-    background: linear-gradient(180deg, style.$dark-purple 0, transparent 200%);
+    background: linear-gradient(180deg, style.$bg-color 0, transparent 200%);
     opacity: 0.85;
     position: absolute;
     width: 100%;
