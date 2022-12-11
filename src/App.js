@@ -3,6 +3,7 @@ import { NavBar } from './components/NavBar.js';
 import { Hero } from './components/Hero.js';
 import { About } from './components/About.js';
 import { Projects } from './components/Projects.js';
+import { Contact } from './components/Contact.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 }

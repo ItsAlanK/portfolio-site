@@ -6,12 +6,6 @@
   }
 
 .hero {
-    .title {
-        @include style.title($font-size: 3rem);
-        margin-bottom: 1.5rem;
-        display: inline-block;
-    }
-
     h1 {
         font-family: style.$display-font;
         font-size: 3rem;

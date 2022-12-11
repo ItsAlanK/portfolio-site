@@ -11,12 +11,6 @@
     .flex {
     transform: skewY(2deg);
     }
-
-    .title {
-        @include style.title($font-size: 3rem);
-        margin-bottom: 1.5rem;
-        display: inline-block;
-    }
 }
 
 p {

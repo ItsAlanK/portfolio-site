@@ -67,3 +67,9 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.title {
+    @include title($font-size: 3rem);
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}

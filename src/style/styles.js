@@ -4,3 +4,4 @@ import './navbar.scss';
 import './hero.scss';
 import './about.scss';
 import './projects.scss';
+import './contact.scss';
