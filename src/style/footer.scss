@@ -1,0 +1,43 @@
+@use 'style';
+
+.footer {
+    margin: 0.5rem 0;
+
+    a {
+        color: style.$teal;
+        text-decoration: none;
+    }
+
+    .navbar-brand {
+        font-family: style.$logo-font;
+        font-size: 2rem !important;
+        letter-spacing: 0.2rem;
+        color: style.$teal !important;
+        transition: 0.2s linear;
+    }
+
+    .navbar-brand:hover {
+        color: style.$dark-purple !important;
+    }
+
+    .navbar-brand::after {
+        content: 'ItsAlanK';
+        display: block;
+        color: style.$dark-purple;
+        transform: rotate3d(1, 0, 0, 180deg);
+        margin: -26px 0 0 0;
+        transition: 0.2s linear;
+    }
+
+    .navbar-brand:hover::after {
+        color: style.$teal;
+    }
+
+    .social-icon {
+        align-items: center;
+    
+        .nav-social {
+            padding: 0 1rem;
+        }
+    }
+}

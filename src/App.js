@@ -4,6 +4,7 @@ import { Hero } from './components/Hero.js';
 import { About } from './components/About.js';
 import { Projects } from './components/Projects.js';
 import { Contact } from './components/Contact.js';
+import { Footer } from './components/Footer.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
