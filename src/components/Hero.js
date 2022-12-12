@@ -17,6 +17,8 @@ export const Hero = () => {
     const [delta, setDelta] = useState(300 - Math.random() * 100); 
     const period = 2000;
 
+    const contact = document.getElementById('contact');
+
     useEffect(() => {
         let ticker = setInterval(() => {
             tick();
@@ -62,7 +64,7 @@ export const Hero = () => {
                         <p>
                             Obsessed with learning and expanding my skillset. Passionate about clean, sleek design inside and out. Looking for new ways to grow my creativity.
                         </p>
-                        <button onClick={() => console.log('chat')}>Let's Chat <FontAwesomeIcon icon={ faPaperPlane }/>&nbsp;</button>
+                        <button onClick={() => contact.scrollIntoView({behavior: 'smooth'})}>Let's Chat <FontAwesomeIcon icon={ faPaperPlane }/>&nbsp;</button>
                     </Col>
                     <Col className='flex' xs={12} md={6} lg={5}>
                         <img src={ portraitImg } alt="Alan Kinsella, ItsAlanK, portrait." />

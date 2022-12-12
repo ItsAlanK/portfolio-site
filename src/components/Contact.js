@@ -5,20 +5,15 @@ const FORM_ENDPOINT = "https://public.herotofu.com/v1/cc82b800-798a-11ed-a126-b1
 
 export const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = (e) => {
+  const [buttonText, setButtonText] = useState('Send');
+  const form = document.getElementById('contact-form');
+  const handleSubmit = () => {
+    setButtonText("Sending...");
     setTimeout(() => {
       setSubmitted(true);
-    }, 100);
+      setButtonText("Sent");
+    }, 250);
   };
-
-  if (submitted) {
-    return (
-      <>
-        <h2>Thank you!</h2>
-        <div>We'll be in touch soon.</div>
-      </>
-    );
-  }
 
   return (
     <section className="contact" id="contact">
@@ -35,14 +30,16 @@ export const Contact = () => {
             >
               <Row className='form-row'>
                 <Col size={12} className="px-1">
-                  <input type="text" placeholder="Your name" name="name" required />
+                  <input type="text" placeholder="Your name" name="name" required disabled={submitted}/>
                 </Col>
                 <Col size={12} className="px-1">
-                  <input type="email" placeholder="Email" name="email" required />
+                  <input type="email" placeholder="Email" name="email" required disabled={submitted}/>
                 </Col>
                 <Col size={12} className="px-1">
-                  <textarea placeholder="Your message" name="message" required />
-                  <button type="submit"> Send a message </button>
+                  <textarea placeholder="Your message" name="message" required disabled={submitted}/>
+                  <h2 className={submitted ? "" : "hidden"}>Thanks for the message!</h2>
+                  <p className={submitted ? "" : "hidden"}>I'll be in touch soon.</p>
+                  <button type="submit" disabled={submitted}>{buttonText}</button>
                 </Col>
               </Row>
             </form>

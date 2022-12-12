@@ -3,7 +3,7 @@
 .about {
     margin: 3rem 0;
     padding: 5rem 0;
-    background-color: style.$teal;
+    background: linear-gradient(120deg, style.$teal 50%, style.$bg-color 200%);
     transform: skewY(-2deg);
 }
 
