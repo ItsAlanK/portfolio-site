@@ -9,8 +9,8 @@
   display: none;
 }
 
-.contact img {
-  width: 92%;
+.form-row{
+  flex-direction: column;
 }
 
 .contact form input, .contact form textarea {
