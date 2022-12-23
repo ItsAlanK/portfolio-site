@@ -18,7 +18,7 @@ export const Footer = () => {
             </div>
           </Col>
           <Col sm={12} lg={4} className="text-center">
-            <small >&copy; Copyright 2022. <a href='https://itsalank.com'>itsalank.com</a></small>
+            <small >&copy; Copyright 2022 <a href='https://itsalank.com'>itsalank.com</a></small>
           </Col>
         </Row>
       </Container>

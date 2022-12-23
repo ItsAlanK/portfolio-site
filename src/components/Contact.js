@@ -19,7 +19,7 @@ export const Contact = () => {
     <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center flex">
-          <Col size={12} md={6}>
+          <Col size={12} md={6} className='contact-container'>
             <iframe title='dummyframe' name="dummyframe" id="dummyframe"></iframe>
             <h1 className="title">Contact Me</h1>
             <form
