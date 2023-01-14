@@ -56,6 +56,10 @@ Stretch Feats
 - [React](https://reactjs.org/)
 - [React Bootstrap](https://react-bootstrap.github.io/)
 - [SASS](https://sass-lang.com/)
+
+### Tools
+- Contact Form Management: [HeroTofu](https://herotofu.com/)
+- Hosting Github Pages: [react-gh-pages](https://github.com/gitname/react-gh-pages)
 ### Fonts
 
 - Display Font: [Mendl Sans Dusk](https://fonts.adobe.com/fonts/mendl-sans)
