@@ -8,25 +8,29 @@ export const Projects = () => {
         {
             title: "Title 1",
             category: "Web",
-            description: "Short Proj desc",
+            tagline: "Tagline",
+            description: "Proj desc",
             imgUrl: projImg1,
         },
         {
             title: "Title 2",
             category: "Web",
-            description: "Short Proj desc",
+            tagline: "Tagline",
+            description: "Proj desc",
             imgUrl: projImg1,
         },
         {
             title: "Title 3",
             category: "Creative",
-            description: "Short Proj desc",
+            tagline: "Tagline",
+            description: "Proj desc",
             imgUrl: projImg1,
         },
         {
             title: "Title 4",
             category: "Creative",
-            description: "Short Proj desc",
+            tagline: "Tagline",
+            description: "Proj desc",
             imgUrl: projImg1,
         },
     ];
