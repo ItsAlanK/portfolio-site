@@ -1,37 +1,56 @@
 import { Container, Row, Col, Nav, Tab  } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import projImg1 from "../assets/img/project-img-1.png";
+import projImg2 from "../assets/img/project-img-2.png";
+import projImg3 from "../assets/img/project-img-3.png";
+import projImg4 from "../assets/img/project-img-4.png";
+import projImg5 from "../assets/img/project-img-5.png";
+import projImg6 from "../assets/img/project-img-6.jpeg";
 
 export const Projects = () => {
 
     const projects = [
         {
-            title: "Title 1",
+            title: "APR Breathwork",
             category: "Web",
-            tagline: "Tagline",
-            description: "Proj desc",
+            tagline: "Full Stack Ecommerce Site",
+            description: "APR Breathwork is an ecommerce site designed to be used in the future by my partner, Aoife, who is a breathwork coach. She provides 1 to 1 and group breathwork classes both as 1 offs and 6 week courses. So she was in need of a website where she can both advertise and sell these courses and classes.",
             imgUrl: projImg1,
         },
         {
-            title: "Title 2",
+            title: "Gold Splits",
             category: "Web",
-            tagline: "Tagline",
-            description: "Proj desc",
-            imgUrl: projImg1,
+            tagline: "Django based user submission site",
+            description: "Gold Splits is a platform for speedrunners of various games to gather together to discuss various topics. Post your new personal best times, start a discussion about strategies or create a guide on a route.",
+            imgUrl: projImg2,
         },
         {
-            title: "Title 3",
-            category: "Creative",
-            tagline: "Tagline",
-            description: "Proj desc",
-            imgUrl: projImg1,
+            title: "Portfolio Tracker",
+            category: "Web",
+            tagline: "Python application",
+            description: "The portfolio tracker is a tool created as a way for investors of stock and crypto to easily monitor their investments and plot changes to a spreadsheet.",
+            imgUrl: projImg3,
         },
         {
-            title: "Title 4",
+            title: "Trivial Gauntlet",
+            category: "Web",
+            tagline: "Javascript Quiz Game",
+            description: "Tackle a gauntlet of trivia questions and see how far you can get with limited strikes in this multiple choice quiz. This game uses the Open Trivia Database API to generate a gauntlet of questions to challenge the users' knowledge on various subjects.",
+            imgUrl: projImg4,
+        },
+        {
+            title: "Explore Hyrule",
+            category: "Web",
+            tagline: "Static HTML Site",
+            description: "Explore Hyrule is a website created to promote The Legend of Zelda: Breath of the Wild video game for the Nintendo Switch. The website is aimed at displaying the features of the game and to inform users about some of the lore and gameplay they can expect from the product.",
+            imgUrl: projImg5,
+        },
+        {
+            title: "Sketches",
             category: "Creative",
-            tagline: "Tagline",
-            description: "Proj desc",
-            imgUrl: projImg1,
+            tagline: "Architecture Sketches",
+            description: "I've started drawing local buildings that I find interesting or unique and post them to Instagram for the moment. I plan to collect them and host them elsewhere too and potentially sell prints.",
+            imgUrl: projImg6,
         },
     ];
 
