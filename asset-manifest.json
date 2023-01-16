@@ -1,18 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.347b9712.css",
-    "main.js": "/static/js/main.46899a73.js",
+    "main.css": "/static/css/main.8f814c04.css",
+    "main.js": "/static/js/main.e3746314.js",
     "static/js/787.37faa4c4.chunk.js": "/static/js/787.37faa4c4.chunk.js",
+    "static/media/project-img-6.jpeg": "/static/media/project-img-6.2e86b4aff00fe949c6b0.jpeg",
     "static/media/project-img-1.png": "/static/media/project-img-1.1e54cabc168ca59e20f2.png",
     "static/media/portrait.png": "/static/media/portrait.55ed9c7a0e2f26cc3421.png",
+    "static/media/project-img-4.png": "/static/media/project-img-4.636205a7a04116de78b1.png",
+    "static/media/project-img-5.png": "/static/media/project-img-5.a3b41f02e8f18c99b987.png",
+    "static/media/project-img-2.png": "/static/media/project-img-2.d99dfae15cd2d5c01f2e.png",
     "static/media/neutraface-demi.otf": "/static/media/neutraface-demi.43113b17e18b40ba005b.otf",
+    "static/media/project-img-3.png": "/static/media/project-img-3.3d0a861df02f2b7dc588.png",
     "index.html": "/index.html",
-    "main.347b9712.css.map": "/static/css/main.347b9712.css.map",
-    "main.46899a73.js.map": "/static/js/main.46899a73.js.map",
+    "main.8f814c04.css.map": "/static/css/main.8f814c04.css.map",
+    "main.e3746314.js.map": "/static/js/main.e3746314.js.map",
     "787.37faa4c4.chunk.js.map": "/static/js/787.37faa4c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.347b9712.css",
-    "static/js/main.46899a73.js"
+    "static/css/main.8f814c04.css",
+    "static/js/main.e3746314.js"
   ]
 }
