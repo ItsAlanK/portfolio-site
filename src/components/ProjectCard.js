@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-export const ProjectCard = ({title, category, tagline, description, imgUrl}) => {
+export const ProjectCard = ({title, category, tagline, description, imgUrl, link}) => {
     function MyVerticallyCenteredModal(props) {
         return (
           <Modal
@@ -22,6 +22,7 @@ export const ProjectCard = ({title, category, tagline, description, imgUrl}) => 
               <p>
                 {description}
               </p>
+              <a href={link} target='_blank'>Link to Project</a>
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={props.onHide}>Close</Button>

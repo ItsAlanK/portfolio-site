@@ -16,6 +16,7 @@ export const Projects = () => {
             tagline: "Full Stack Ecommerce Site",
             description: "APR Breathwork is an ecommerce site designed to be used in the future by my partner, Aoife, who is a breathwork coach. She provides 1 to 1 and group breathwork classes both as 1 offs and 6 week courses. So she was in need of a website where she can both advertise and sell these courses and classes.",
             imgUrl: projImg1,
+            link: 'https://github.com/ItsAlanK/apr-breathwork',
         },
         {
             title: "Gold Splits",
@@ -23,6 +24,7 @@ export const Projects = () => {
             tagline: "Django based user submission site",
             description: "Gold Splits is a platform for speedrunners of various games to gather together to discuss various topics. Post your new personal best times, start a discussion about strategies or create a guide on a route.",
             imgUrl: projImg2,
+            link: 'https://github.com/ItsAlanK/gold-splits',
         },
         {
             title: "Portfolio Tracker",
@@ -30,6 +32,7 @@ export const Projects = () => {
             tagline: "Python application",
             description: "The portfolio tracker is a tool created as a way for investors of stock and crypto to easily monitor their investments and plot changes to a spreadsheet.",
             imgUrl: projImg3,
+            link: 'https://github.com/ItsAlanK/portfolio-tracker',
         },
         {
             title: "Trivial Gauntlet",
@@ -37,6 +40,7 @@ export const Projects = () => {
             tagline: "Javascript Quiz Game",
             description: "Tackle a gauntlet of trivia questions and see how far you can get with limited strikes in this multiple choice quiz. This game uses the Open Trivia Database API to generate a gauntlet of questions to challenge the users' knowledge on various subjects.",
             imgUrl: projImg4,
+            link: 'https://github.com/ItsAlanK/trivial-gauntlet',
         },
         {
             title: "Explore Hyrule",
@@ -44,6 +48,7 @@ export const Projects = () => {
             tagline: "Static HTML Site",
             description: "Explore Hyrule is a website created to promote The Legend of Zelda: Breath of the Wild video game for the Nintendo Switch. The website is aimed at displaying the features of the game and to inform users about some of the lore and gameplay they can expect from the product.",
             imgUrl: projImg5,
+            link: 'https://github.com/ItsAlanK/explore-hyrule',
         },
         {
             title: "Sketches",
@@ -51,6 +56,7 @@ export const Projects = () => {
             tagline: "Architecture Sketches",
             description: "I've started drawing local buildings that I find interesting or unique and post them to Instagram for the moment. I plan to collect them and host them elsewhere too and potentially sell prints.",
             imgUrl: projImg6,
+            link: 'https://www.instagram.com/p/CmOtnkGKnwn/',
         },
     ];
 
