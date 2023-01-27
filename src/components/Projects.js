@@ -58,6 +58,14 @@ export const Projects = () => {
             imgUrl: projImg6,
             link: 'https://www.instagram.com/p/CmOtnkGKnwn/',
         },
+        {
+            title: "We Share We Grow",
+            category: "Creative",
+            tagline: "Podcast Producer",
+            description: "I edit and produce my partner Aoife's Health and Wellness Podcast 'We Share, We Grow'",
+            imgUrl: "https://wesharewegrow.buzzsprout.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCQk9VMVFNPSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--bb868bbad9266ffe846b08aa670114a63dff0155/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2QzNKbGMybDZaVWtpRFRZd01IZzJNREJlQmpzR1ZEb01aM0poZG1sMGVVa2lDMk5sYm5SbGNnWTdCbFE2QzJWNGRHVnVkRWtpRERZd01IZzJNREFHT3daVU9neHhkV0ZzYVhSNWFWVTZEMk52Ykc5eWMzQmhZMlZKSWdselVrZENCanNHVkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--8a9b4b1bc245a46b538f72d4d9b2ab0a7fbe8ac1/podcast%20pic.jpg",
+            link: 'https://wesharewegrow.buzzsprout.com/',
+        },
     ];
 
     return (
